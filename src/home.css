@@ -5,19 +5,21 @@
 background-position: center;
   background-repeat: no-repeat;
   border: none;
-  margin: 10px;
+  margin: 20px;
   padding: 0 10px;
   cursor: pointer;
   font-weight: bold;
   font-size: 1.5rem;
   width: 170px;
   color: white;
+  transition: scale 0.15s;
 }
 
 .home:hover,
 .menu:hover,
 .about:hover{
-  color: rgb(254, 212, 4);
+  color: rgb(238, 238, 5);
+  scale: 1.1;
 }
 
 #content{

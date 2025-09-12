@@ -34,10 +34,10 @@ p1.innerText =
       const p6 = document.createElement("p");
       p6.innerText = "Thank you for choosing us! We can’t wait to serve you.";
 
-      const call = document.createElement("strong");
+      const call = document.createElement("h2");
       call.innerText = "📞 Call us to order: 074 399 0423 0";
  
-      const visit = document.createElement("strong");
+      const visit = document.createElement("h2");
       visit.innerText = "📍 Visit us at: 923 Fluffy Street , Alexander";
 p1.classList.add("p1");
 p2.classList.add("p1");
@@ -45,8 +45,6 @@ p3.classList.add("p1");
 p4.classList.add("p1");
 p5.classList.add("p5");
 p6.classList.add("p5");
-call.classList.add("callU");
-visit.classList.add("callU")
 
       const open = document.createElement("strong");
       open.innerText = `🕒 Open daily:`;
