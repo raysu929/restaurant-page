@@ -11,3 +11,12 @@
   display: flex;
   gap: 20px;
 }
+
+.menuH{
+  text-align: center;
+    color: rgb(152, 35, 3);
+}
+
+ul{
+  font-size: 1.2rem;
+}

@@ -4,9 +4,11 @@ export function aboutPage() {
   content.innerHTML = "";
   const about = document.createElement("h1");
   about.innerText = "About Us";
+  about.classList.add("aboutU");
   const subHeader = document.createElement("h2");
   subHeader.innerText =
     "Welcome to Rapanzo Indian Takeaway, where flavour meets tradition.";
+    subHeader.classList.add("subheader")
 const p1 = document.createElement("p");
 p1.innerText =
   "At Rapanzo, we bring the rich, vibrant taste of authentic Indian cuisine straight to your table. Whether you're craving the bold heat of a classic curry or the comforting warmth of freshly baked naan, every dish is prepared with care, passion, and genuine Indian spices.";
@@ -27,16 +29,24 @@ p1.innerText =
 
     const p5 = document.createElement("strong");
     p5.innerText =
-      "Rapanzo isn’t just another takeaway — it’s your new go-to for real Indian food, made right.";
+      "Rapanzo isn’t just another takeaway, it’s your new go-to for real Indian food, made right.";
 
       const p6 = document.createElement("p");
-      p6.innerText = "Thank you for choosing us — we can’t wait to serve you.";
+      p6.innerText = "Thank you for choosing us! We can’t wait to serve you.";
 
       const call = document.createElement("strong");
       call.innerText = "📞 Call us to order: 074 399 0423 0";
  
-      const visit = document.createElement("div");
+      const visit = document.createElement("strong");
       visit.innerText = "📍 Visit us at: 923 Fluffy Street , Alexander";
+p1.classList.add("p1");
+p2.classList.add("p1");
+p3.classList.add("p1");
+p4.classList.add("p1");
+p5.classList.add("p5");
+p6.classList.add("p5");
+call.classList.add("callU");
+visit.classList.add("callU")
 
       const open = document.createElement("strong");
       open.innerText = `🕒 Open daily:`;

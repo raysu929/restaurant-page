@@ -3,6 +3,7 @@ export function menuPage() {
   content.innerHTML = "";
   const menu = document.createElement("h1");
   menu.innerText = "Rapanzo Indian Takeaway Menu";
+  menu.classList.add("menuH");
   const starters = document.createElement("h2");
   starters.innerText = "Starters:";
 

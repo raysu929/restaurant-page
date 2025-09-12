@@ -27,7 +27,7 @@ background-position: center;
   display: grid;
   gap: 10px;
   border-radius: 10px;
-  width: 700px;
+  width: 750px;
   padding: 20px;
   box-shadow: 5px 2px 5px rgba(33, 29, 29, 0.15);
 }
