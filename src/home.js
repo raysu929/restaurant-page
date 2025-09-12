@@ -1,9 +1,10 @@
-import Image from "./images.jpeg";
+import Image from "./images2.jpg";
 export default function homePage(){
 const content = document.getElementById("content");
 content.innerHTML = '';
 const image = document.createElement("img");
 image.src = Image;
+image.classList.add("image");
 
 const heading = document.createElement("h1");
 heading.innerText =

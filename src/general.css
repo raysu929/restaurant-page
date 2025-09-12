@@ -14,7 +14,11 @@ background-image: url("./background3.jpg");
  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 160vh;
+  height: 180vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 img, picture, video, canvas, svg {
