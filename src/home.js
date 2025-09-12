@@ -9,7 +9,7 @@ image.classList.add("image");
 const heading = document.createElement("h1");
 heading.innerText =
   "Welcome to Rapanzo! Where Every Meal Feels Like a Celebration";
-
+heading.classList.add("heading");
 const paragraph = document.createElement("p");
 paragraph.innerText =
   "Step inside and experience more than just dining, discover a place where passion for flavor meets heartfelt hospitality. At Rapanzo, we believe that great food brings people together, creating moments worth savoring. Our chefs craft each dish using the freshest, locally sourced ingredients, blending tradition with creativity to surprise your palate.";
@@ -20,6 +20,10 @@ paragraph2.innerText =
 const paragraph3 = document.createElement("p");
 paragraph3.innerText =
   "Come taste the difference, share a laugh, and make memories. Because here at Rapanzo, you’re not just a guest, you’re part of our family.";
+
+  paragraph.classList.add("p1");
+    paragraph2.classList.add("p2");
+  paragraph3.classList.add("p3");
 
 content.appendChild(image);
 content.appendChild(heading);

@@ -1,0 +1,13 @@
+.dishName{
+  display: flex;
+  justify-content: space-between;
+}
+
+.price{
+  color: rgb(6, 103, 122);
+}
+
+.dishNameS{
+  display: flex;
+  gap: 20px;
+}

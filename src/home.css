@@ -1,22 +1,29 @@
 .home,
 .menu,
 .about{
+  background-image: url("./button4.jpeg");
+background-position: center;
+  background-repeat: no-repeat;
   border: none;
   margin: 10px;
   padding: 0 10px;
-  background-color: transparent;
   cursor: pointer;
   font-weight: bold;
   font-size: 1.5rem;
+  width: 170px;
+  color: white;
 }
 
 .home:hover,
 .menu:hover,
 .about:hover{
-  color: rgb(81, 80, 80);
+  color: rgb(254, 212, 4);
 }
 
 #content{
+background-image: url("./images.jpg");
+background-position: center;
+  background-repeat: no-repeat;
   display: grid;
   gap: 10px;
   border-radius: 10px;
@@ -26,6 +33,22 @@
 }
 
 .image{
-  margin: 10px;
   border-radius: 10px;
+  box-shadow: 5px 2px 5px rgba(33, 29, 29, 0.15);
+
+}
+
+.heading{
+  text-align: center;
+  color: rgb(108, 11, 11);
+}
+
+.p1,
+.p2,
+.p3{
+  padding-left: 15px;
+  font-weight: 500;
+  color:rgb(2, 58, 104);
+  font-size: 1.3rem;
+  font-family: cursive;
 }
