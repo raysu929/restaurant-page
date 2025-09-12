@@ -1,6 +1,6 @@
-// webpack.config.js
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const webpack = require("webpack");
 
 module.exports = {
   mode: "development",
@@ -14,7 +14,24 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/template.html",
     }),
+    new webpack.ProvidePlugin({
+      process: "process/browser",
+      Buffer: ["buffer", "Buffer"],
+    }),
   ],
+  resolve: {
+    fallback: {
+      util: require.resolve("util/"),
+      path: require.resolve("path-browserify"),
+      crypto: require.resolve("crypto-browserify"),
+      stream: require.resolve("stream-browserify"),
+      assert: require.resolve("assert/"),
+      url: require.resolve("url/"),
+      vm: require.resolve("vm-browserify"),
+      process: require.resolve("process/browser"),
+      buffer: require.resolve("buffer/"),
+    },
+  },
   module: {
     rules: [
       {
@@ -30,5 +47,9 @@ module.exports = {
         type: "asset/resource",
       },
     ],
+  },
+  devServer: {
+    static: "./dist",
+    open: true,
   },
 };
