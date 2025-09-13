@@ -1,10 +1,13 @@
 {
+    "homepage": "https://raysu929.github.io/restaurant-page",
   "name": "restaurant-page",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "build": "webpack",
+  "deploy": "npm run build && gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -16,9 +19,9 @@
   "bugs": {
     "url": "https://github.com/raysu929/restaurant-page/issues"
   },
-  "homepage": "https://github.com/raysu929/restaurant-page#readme",
   "devDependencies": {
     "css-loader": "^7.1.2",
+    "gh-pages": "^6.3.0",
     "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.4",
     "style-loader": "^4.0.0",
