@@ -14,7 +14,7 @@ background-image: url("../pictures/background3.jpg");
  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 220vh;
+  height: 250vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
