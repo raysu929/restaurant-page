@@ -1,10 +1,10 @@
-import homePage from "./home";
-import {menuPage} from "./menu";
-import {aboutPage} from "./about";
-import "./general.css";
-import "./home.css";
-import "./menu.css";
-import "./about.css";
+import homePage from "../scripts/home";
+import { menuPage } from "../scripts/menu";
+import { aboutPage } from "../scripts/about";
+import "../styles/general.css";
+import "../styles/home.css";
+import "../styles/menu.css";
+import "../styles/about.css";
 
 const home = document.querySelector(".home");
     home.addEventListener("click", () => {

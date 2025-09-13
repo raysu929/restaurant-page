@@ -7,15 +7,15 @@ export function aboutPage() {
   about.classList.add("aboutU");
   const subHeader = document.createElement("h2");
   subHeader.innerText =
-    "Welcome to Rapanzo Indian Takeaway, where flavour meets tradition.";
+    "Welcome to The Curry Bar Indian Takeaway, where flavour meets tradition.";
     subHeader.classList.add("subheader")
 const p1 = document.createElement("p");
 p1.innerText =
-  "At Rapanzo, we bring the rich, vibrant taste of authentic Indian cuisine straight to your table. Whether you're craving the bold heat of a classic curry or the comforting warmth of freshly baked naan, every dish is prepared with care, passion, and genuine Indian spices.";
+  "At The Curry Bar, we bring the rich, vibrant taste of authentic Indian cuisine straight to your table. Whether you're craving the bold heat of a classic curry or the comforting warmth of freshly baked naan, every dish is prepared with care, passion, and genuine Indian spices.";
 
   const p2 = document.createElement("p");
   p2.innerText =
-    "Founded with a love for traditional recipes and a modern approach to takeaway dining, Rapanzo was created to offer more than just food — we offer an experience. From North Indian favourites to South Indian specialties, our menu celebrates the diversity of Indian cooking while staying true to its roots.";
+    "Founded with a love for traditional recipes and a modern approach to takeaway dining, The Curry Bar was created to offer more than just food — we offer an experience. From North Indian favourites to South Indian specialties, our menu celebrates the diversity of Indian cooking while staying true to its roots.";
 
     
   const p3 = document.createElement("p");
@@ -29,7 +29,7 @@ p1.innerText =
 
     const p5 = document.createElement("strong");
     p5.innerText =
-      "Rapanzo isn’t just another takeaway, it’s your new go-to for real Indian food, made right.";
+      "The Curry Bar isn’t just another takeaway, it’s your new go-to for real Indian food, made right.";
 
       const p6 = document.createElement("p");
       p6.innerText = "Thank you for choosing us! We can’t wait to serve you.";

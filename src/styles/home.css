@@ -1,7 +1,7 @@
 .home,
 .menu,
 .about{
-  background-image: url("./button4.jpeg");
+  background-image: url("../pictures/button4.jpeg");
 background-position: center;
   background-repeat: no-repeat;
   border: none;
@@ -18,12 +18,12 @@ background-position: center;
 .home:hover,
 .menu:hover,
 .about:hover{
-  color: rgb(238, 238, 5);
+  color: gold;
   scale: 1.1;
 }
 
 #content{
-background-image: url("./images.jpg");
+background-image: url("../pictures/images.jpg");
 background-position: center;
   background-repeat: no-repeat;
   display: grid;
