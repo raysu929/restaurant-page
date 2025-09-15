@@ -6,6 +6,10 @@ import "../styles/home.css";
 import "../styles/menu.css";
 import "../styles/about.css";
 
+ if (process.env.NODE_ENV !== "production") {
+   console.log("Looks like we are in development mode!");
+ }
+
 const home = document.querySelector(".home");
     home.addEventListener("click", () => {
       homePage();

@@ -1,24 +1,16 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const webpack = require("webpack");
+const webpack = require("webpack"); 
 
 module.exports = {
-  mode: "development",
-  entry: "./src/scripts/index.js",
+  entry: {
+    app: "./src/scripts/index.js",
+  },
   output: {
-    filename: "main.js",
+    filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: "./src/template.html",
-    }),
-    new webpack.ProvidePlugin({
-      process: "process/browser",
-      Buffer: ["buffer", "Buffer"],
-    }),
-  ],
   resolve: {
     fallback: {
       util: require.resolve("util/"),
@@ -32,6 +24,16 @@ module.exports = {
       buffer: require.resolve("buffer/"),
     },
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: "Production",
+      template: "./src/template.html",
+    }),
+    new webpack.ProvidePlugin({
+      process: "process/browser",
+      Buffer: ["buffer", "Buffer"],
+    }),
+  ],
   module: {
     rules: [
       {
@@ -47,9 +49,5 @@ module.exports = {
         type: "asset/resource",
       },
     ],
-  },
-  devServer: {
-    static: "./dist",
-    open: true,
   },
 };

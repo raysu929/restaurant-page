@@ -1,43 +1,45 @@
 {
     "homepage": "https://raysu929.github.io/restaurant-page",
-  "name": "restaurant-page",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-     "build": "webpack",
-  "deploy": "npm run build && gh-pages -d dist"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/raysu929/restaurant-page.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/raysu929/restaurant-page/issues"
-  },
-  "devDependencies": {
-    "css-loader": "^7.1.2",
-    "gh-pages": "^6.3.0",
-    "html-loader": "^5.1.0",
-    "html-webpack-plugin": "^5.6.4",
-    "style-loader": "^4.0.0",
-    "webpack": "^5.101.3",
-    "webpack-cli": "^6.0.1",
-    "webpack-dev-server": "^5.2.2"
-  },
-  "dependencies": {
-    "assert": "^2.1.0",
-    "buffer": "^6.0.3",
-    "crypto-browserify": "^3.12.1",
-    "path-browserify": "^1.0.1",
-    "process": "^0.11.10",
-    "stream-browserify": "^3.0.0",
-    "url": "^0.11.4",
-    "util": "^0.12.5",
-    "vm-browserify": "^1.1.2"
-  }
+    "name": "restaurant-page",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "webpack serve --open --config webpack.dev.js",
+        "build": "webpack --config webpack.prod.js",
+        "deploy": "npm run build && gh-pages -d dist"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/raysu929/restaurant-page.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/raysu929/restaurant-page/issues"
+    },
+    "devDependencies": {
+        "css-loader": "^7.1.2",
+        "gh-pages": "^6.3.0",
+        "html-loader": "^5.1.0",
+        "html-webpack-plugin": "^5.6.4",
+        "style-loader": "^4.0.0",
+        "webpack": "^5.101.3",
+        "webpack-cli": "^6.0.1",
+        "webpack-dev-server": "^5.2.2",
+        "webpack-merge": "^6.0.1"
+    },
+    "dependencies": {
+        "assert": "^2.1.0",
+        "buffer": "^6.0.3",
+        "crypto-browserify": "^3.12.1",
+        "path-browserify": "^1.0.1",
+        "process": "^0.11.10",
+        "stream-browserify": "^3.0.0",
+        "url": "^0.11.4",
+        "util": "^0.12.5",
+        "vm-browserify": "^1.1.2"
+    }
 }
